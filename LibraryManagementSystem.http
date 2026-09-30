@@ -1,0 +1,38 @@
+@LibraryManagementSystem_HostAddress = http://localhost:5024
+
+GET {{LibraryManagementSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{LibraryManagementSystem_HostAddress}}/api/books
+Content-Type: application/json
+{
+  "Title": "life of mistry",
+  "Author":"bharathi",
+  "ISBN":"978450808979657",
+  "PublishedYear":2016,
+  "IsAvailable":false
+}
+
+###
+GET {{LibraryManagementSystem_HostAddress}}/api/books
+Accept: application/json
+
+###
+GET {{LibraryManagementSystem_HostAddress}}/api/books/3
+Accept: application/json
+
+###
+PUT {{LibraryManagementSystem_HostAddress}}/api/books/3
+Content-Type: application/json
+{
+  "id":3,
+  "Title": "Wings of Fire",
+  "Author":"Arun Tiwari",
+  "ISBN":"7896898957932",
+  "PublishedYear":1999,
+  "IsAvailable":true
+}
+
+###
+delete {{LibraryManagementSystem_HostAddress}}/api/books/6
