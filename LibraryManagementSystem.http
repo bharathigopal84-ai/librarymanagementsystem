@@ -23,16 +23,16 @@ GET {{LibraryManagementSystem_HostAddress}}/api/books/3
 Accept: application/json
 
 ###
-PUT {{LibraryManagementSystem_HostAddress}}/api/books/3
+PUT {{LibraryManagementSystem_HostAddress}}/api/books/7
 Content-Type: application/json
 {
-  "id":3,
-  "Title": "Wings of Fire",
-  "Author":"Arun Tiwari",
-  "ISBN":"7896898957932",
-  "PublishedYear":1999,
-  "IsAvailable":true
+  "id": 7,
+  "title": "life of mistry - updated",
+  "author": "bharathi",
+  "isbn": "978450808979657",
+  "publishedYear": 2016,
+  "isAvailable": false
 }
 
 ###
-delete {{LibraryManagementSystem_HostAddress}}/api/books/6
+delete {{LibraryManagementSystem_HostAddress}}/api/books/7
